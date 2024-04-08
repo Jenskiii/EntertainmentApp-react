@@ -1,0 +1,73 @@
+@use "../../assets/sass/abstracts/" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: $color-primary-800;
+
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+    outline: 1px solid $color-neutral-000;
+    border-radius: 50%;
+  }
+
+  @include mq(medium) {
+    & {
+      padding: 1.5rem;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  @include mq(large) {
+    & {
+      flex-direction: column;
+      align-items: center;
+      border-radius: 20px;
+      padding: 2.1875rem 2rem;
+      height: calc(100vh - 4rem);
+      max-width: 6rem;
+      max-height: 60rem;
+
+      img {
+        width: 2.5rem;   
+        height: 2.5rem;
+      }
+    }
+  }
+
+  // nav
+  nav {
+    display: flex;
+    gap: 1.5rem;
+    margin-inline: auto;
+    @include mq(medium) {
+      gap: 2rem;
+    }
+
+    @include mq(large) {
+      gap: 2.5rem;
+      flex-direction: column;
+      margin: 75px 0 auto 0;
+    }
+  }
+}
+
+.icon {
+  cursor: pointer;
+  fill: $color-primary-300;
+
+  transition: 0.3s ease-in-out;
+  &:hover {
+    fill: $color-accent-400;
+  }
+
+  &.active {
+    fill: $color-neutral-000;
+  }
+}

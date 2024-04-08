@@ -1,0 +1,35 @@
+// global color tokens
+$-clr-white: hsl(0 0% 100%);
+$-clr-black: hsl(0 0% 0%);
+
+$-clr-red-400: hsl(0, 97%, 63%);
+
+$-clr-blue-300: hsl(223, 23%, 46%);
+$-clr-blue-800: hsl(223, 36%, 14%);
+$-clr-blue-900: hsl(223, 30%, 9%);
+
+$default: (
+  "neutral": (
+    "000": $-clr-white,
+    "1000": $-clr-black,
+  ),
+  "accent": (
+    "400": $-clr-red-400,
+  ),
+  "primary": (
+    "300": $-clr-blue-300,
+    "800": $-clr-blue-800,
+    "900": $-clr-blue-900,
+  ),
+);
+
+// contextual color tokens
+$color-neutral-000: var(--neutral-000);
+$color-neutral-1000: var(--neutral-1000);
+
+$color-primary-300: var(--primary-300);
+$color-primary-800: var(--primary-800);
+$color-primary-900: var(--primary-900);
+
+$color-accent-400: var(--accent-400);
+

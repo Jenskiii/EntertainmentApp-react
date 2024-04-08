@@ -1,0 +1,20 @@
+@use "../../sass/abstracts/" as *;
+
+.heading-L {
+  @include heading($font-size-700);
+}
+.heading-M {
+  @include heading($font-size-600);
+}
+.heading-M-medium {
+  @include heading($font-size-600);
+  font-weight: 500;
+}
+.heading-S {
+  @include heading($font-size-500);
+  font-weight: 500;
+}
+.heading-XS {
+  @include heading($font-size-500);
+  font-weight: 500;
+}

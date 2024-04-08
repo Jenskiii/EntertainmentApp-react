@@ -1,0 +1,17 @@
+.card {
+  &_img img {
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  &_body {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 5px;
+  }
+
+  &_category {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+}
